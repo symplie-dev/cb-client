@@ -4,7 +4,7 @@ import styles from './style.css';
 export default class App extends React.Component {
   render() {
     return (
-     <div className={styles.app}>
+      <div className={styles.app}>
         <h2>Sign Up</h2>
         <hr />
         <div className="row ptm pbl">
@@ -20,7 +20,7 @@ export default class App extends React.Component {
         <div className="row">
           <div className="col-lg-12">
             <div className="alert alert-info" role="alert">
-              Your username is tied to your chrome<br />account. The name you choose is the<br />name that your friends will see.
+              Your username is tied to your chrome account. The name you choose is the name that your friends will see.
             </div>
           </div>
         </div>

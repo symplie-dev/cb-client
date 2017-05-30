@@ -3,7 +3,7 @@ const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
-  template: './sign-up-app/index.html',
+  template: './src/index.html',
   filename: 'index.html',
   inject: 'body'
 });
@@ -12,7 +12,7 @@ const combineLoaders = require('webpack-combine-loaders');
 const copyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: './sign-up-app/index.js',
+  entry: './src/index.js',
   output: {
     path: path.resolve('dist'),
     filename: 'js/bundle.js'
@@ -40,8 +40,9 @@ module.exports = {
     new ExtractTextPlugin('css/styles.css'),
     HtmlWebpackPluginConfig,
     new copyWebpackPlugin([
-      { from: 'sign-up-app/static/css/normalize.css', to: 'css/normalize.css' },
-      { from: 'sign-up-app/static/css/global.css', to: 'css/global.css' }
+      { from: 'src/static/css/normalize.css', to: 'css/normalize.css' },
+      { from: 'src/static/css/global.css', to: 'css/global.css' },
+      { from: 'manifest.json', to: 'manifest.json' }
     ])
   ]
 }
