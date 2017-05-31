@@ -4,7 +4,9 @@ import styles from './style.css';
 export default class ListHeader extends React.Component {
   render() {
     return (
-      <div className={styles.listHeader}></div>
+      <div className={styles.listHeader}>
+        List Header
+      </div>
     );
   }
 }

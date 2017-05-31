@@ -4,7 +4,9 @@ import styles from './style.css';
 export default class ListGroups extends React.Component {
   render() {
     return (
-      <div className={styles.listGroups}></div>
+      <div className={styles.listGroups}>
+        Group List
+      </div>
     );
   }
 }

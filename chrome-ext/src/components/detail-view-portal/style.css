@@ -1,5 +1,4 @@
-.listViewPortal {
-  /*background: #eee;*/
+.detailViewPortal {
   box-sizing: border-box;
   border: 5px solid #333;
 
@@ -7,10 +6,9 @@
   height: 100%;
   left: 0;
   margin: 0;
-  overflow-x: hidden;
-  padding-top: 60px;
-  position: absolute;
+  /*overflow-x: hidden;*/
+  position: relative;
   top: 0;
-  width: 100%;
+  width: 200%;
   z-index: 1;
 }

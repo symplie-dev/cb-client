@@ -1,6 +1,6 @@
-.listContainer {
+.detailFriend {
   box-sizing: border-box;
-  border: 5px solid blue;
+  border: 5px solid lightblue;
   
   display: table-cell;
   height: 100%;

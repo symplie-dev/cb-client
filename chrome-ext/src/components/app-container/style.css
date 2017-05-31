@@ -1,7 +1,14 @@
 .app {
-  background: #000;
+  box-sizing: border-box;
+  border: 5px solid green;
+
+  display: table;
   height: 100%;
-  width: 100%;
+  left: 0;
+  margin: 0;
   overflow-x: hidden;
-  overflow-y: auto;
+  position: relative;
+  top: 0;
+  width: 200%;
+  z-index: 1;
 }

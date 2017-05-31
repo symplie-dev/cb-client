@@ -1,6 +1,6 @@
-.listContainer {
+.detailContainer {
   box-sizing: border-box;
-  border: 5px solid blue;
+  border: 5px solid red;
   
   display: table-cell;
   height: 100%;

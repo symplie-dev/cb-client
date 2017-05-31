@@ -17,7 +17,10 @@ body {
 }
 
 #root {
+  box-sizing: border-box;
+  border: 5px solid blue;
   height: 100%;
+  position: relative;
   width: 100%;
   /*overflow-x: hidden;*/
 }

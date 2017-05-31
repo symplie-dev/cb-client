@@ -1,5 +1,7 @@
 .listFriends {
-  background: lightgreen;
+  box-sizing: border-box;
+  border: 5px solid #666;
+
   display: table-cell;
   height: 100%;
   width: 50%;

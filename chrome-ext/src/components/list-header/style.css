@@ -1,5 +1,7 @@
 .listHeader {
-  background: blue;
+  box-sizing: border-box;
+  border: 5px solid #666;
+  
   height: 60px;
   position: relative;
   width: 100%;
