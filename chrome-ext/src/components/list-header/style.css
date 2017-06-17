@@ -1,9 +1,31 @@
 .listHeader {
+  background: #fff;
+  border-bottom: 1px solid #dadada;
   box-sizing: border-box;
-  border: 5px solid #666;
-  
   height: 60px;
   position: relative;
+  text-align:center;
   width: 100%;
   z-index: 10;
+  overflow: hidden;
 }
+
+.listHeaderItem {
+  transition: background 0.25s ease-in-out, border-bottom 0.25s ease-in-out;
+  border-bottom: 2px solid #fff;
+  box-sizing: border-box;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 20px;
+  position: relative;
+}
+
+.listHeaderItem.active { border-bottom: 2px solid #2ecc71; }
+.listHeaderItem:hover {
+  background: rgba(238, 238, 238, 0.4);
+  border-bottom: 2px solid rgba(238, 238, 238, 0.4);
+}
+.listHeaderItem.active:hover { border-bottom: 2px solid #2ecc71; }

@@ -1,7 +1,4 @@
 .detailViewPortal {
-  box-sizing: border-box;
-  border: 5px solid #333;
-
   display: table;
   height: 100%;
   left: 0;

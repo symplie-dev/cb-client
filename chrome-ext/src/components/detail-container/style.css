@@ -1,7 +1,4 @@
 .detailContainer {
-  box-sizing: border-box;
-  border: 5px solid red;
-  
   display: table-cell;
   height: 100%;
   width: 50%;

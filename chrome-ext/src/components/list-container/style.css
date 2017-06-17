@@ -1,8 +1,6 @@
 .listContainer {
-  box-sizing: border-box;
-  border: 5px solid blue;
-  
   display: table-cell;
   height: 100%;
+  overflow: hidden;
   width: 50%;
 }

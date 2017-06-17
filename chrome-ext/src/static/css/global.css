@@ -11,14 +11,12 @@ body {
   background: #ededed;
   height: 100%;
   margin: 0;
-  overflow-y: auto;
+  overflow-y: hidden;
   padding: 0;
   width: 100%;
 }
 
 #root {
-  box-sizing: border-box;
-  border: 5px solid blue;
   height: 100%;
   position: relative;
   width: 100%;

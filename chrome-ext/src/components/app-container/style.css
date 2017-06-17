@@ -1,7 +1,4 @@
 .app {
-  box-sizing: border-box;
-  border: 5px solid green;
-
   display: table;
   height: 100%;
   left: 0;

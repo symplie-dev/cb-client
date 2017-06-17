@@ -1,7 +1,4 @@
 .detailGroup {
-  box-sizing: border-box;
-  border: 5px solid lightblue;
-  
   display: table-cell;
   height: 100%;
   width: 50%;
