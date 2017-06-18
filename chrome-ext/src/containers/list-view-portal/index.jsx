@@ -5,6 +5,11 @@ import ListGroups from '../list-groups/index.jsx';
 import ListFriends from '../list-friends/index.jsx';
 
 export default class ListViewPortal extends React.Component {
+
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     var portalStyles = [styles.listViewPortal];
 
@@ -19,7 +24,7 @@ export default class ListViewPortal extends React.Component {
 
     return (
       <div className={portalStyles.join(' ')}>
-        <ListGroups />
+        <ListGroups groups={this.props.groups} />
         <ListFriends />
       </div>
     );
@@ -27,5 +32,6 @@ export default class ListViewPortal extends React.Component {
 }
 
 ListViewPortal.propTypes = {
-  selectedList: PropTypes.string.isRequired
+  selectedList: PropTypes.string.isRequired,
+  groups: PropTypes.array.isRequired
 };

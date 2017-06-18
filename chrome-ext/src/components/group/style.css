@@ -1,0 +1,14 @@
+.group {
+  background: #fff;
+  border-bottom: 1px solid #dadada;
+  border-top: 1px solid #dadada;
+  cursor: pointer;
+  margin: 4px 0;
+  padding: 10px;
+  transition: background 0.25s ease-in-out;
+  width: 100%;
+}
+
+.group:hover {
+  background: rgba(255, 255, 255, 0.60);
+}

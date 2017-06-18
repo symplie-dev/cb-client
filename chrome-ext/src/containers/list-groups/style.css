@@ -1,0 +1,17 @@
+.listGroups {
+  display: table-cell;
+  height: 100%;
+  width: 50%;
+}
+
+.listGroups ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listGroups ul li {
+  list-style: none;
+  margin: 0;
+  padding: none;
+}

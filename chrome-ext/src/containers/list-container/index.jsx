@@ -1,10 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './style.css';
-import ListHeader from '../list-header/index.jsx';
+import ListHeader from '../../components/list-header/index.jsx';
 import ListViewPortal from '../list-view-portal/index.jsx';
 
 export default class ListContainer extends React.Component {
+  
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div className={styles.listContainer}>
@@ -12,7 +17,10 @@ export default class ListContainer extends React.Component {
           selectedList={this.props.selectedList}
           clickHeaderItemHandler={this.props.clickHeaderItemHandler}
         />
-        <ListViewPortal selectedList={this.props.selectedList} />
+        <ListViewPortal
+          selectedList={this.props.selectedList}
+          groups={this.props.groups}
+        />
       </div>
     );
   }
@@ -20,5 +28,6 @@ export default class ListContainer extends React.Component {
 
 ListContainer.propTypes = {
   selectedList: PropTypes.string.isRequired,
-  clickHeaderItemHandler: PropTypes.func.isRequired
+  clickHeaderItemHandler: PropTypes.func.isRequired,
+  groups: PropTypes.array.isRequired
 };

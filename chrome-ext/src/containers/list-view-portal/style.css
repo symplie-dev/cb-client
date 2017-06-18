@@ -6,6 +6,7 @@
   padding-top: 60px;
   position: relative;
   top: -60px;
+  transition: left 0.30s ease-in-out;
   width: 200%;
   z-index: 1;
 }
